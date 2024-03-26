@@ -1,11 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        input, select {
+            border: 1.5px solid rgb(77, 77, 77);
+            border-radius: 3px;
+            padding: 4px;
+        }
+    </style>
 </head>
-<body>
-    My Website
+
+<body style="background-color: rgb(206, 243, 252); padding: 2rem 5rem 5rem 2rem">
+
+    <div style="text-align: center;">
+
+        <h1>
+            XYZ College/School
+        </h1>
+        <h2>
+            Student Registration Form
+        </h2>
+        </div>
+
+    <form>
+
+        <div
+            style="display: grid; grid-template-columns: 30% 70%; vertical-align: middle; align-items: center; margin-bottom: 0.5rem;">
+            <label for="image" style="vertical-align: middle;">Student Image:</label>
+            <div style="display: flex; gap: 0.5rem">
+    
+                <input id="image" type="file"
+                    style="width: 100px; height: 80px; display: inline-block; border: 1.5px solid black; border-radius: 0.5rem;">
+                <p>(less than 5 Mb)</p>
+            </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="student-name">Student Name: </label>
+            <input id="student-name" name="student-name" type="text" placeholder="Full Name">
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="father-name">Father's Name: </label>
+            <input id="father-name" name="father-name" type="text" placeholder="Father's Full Name">
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="mother-name">Mother's Name: </label>
+            <input id="mother-name" name="mother-name" type="text" placeholder="Mother's Full Name">
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="genger">Gender: </label>
+            <div style="text-align: right;">
+                <label for="male">Male</label>
+                <input id="male" type="radio">
+                <label for="female">Female</label>
+                <input id="female" type="radio">
+                <label for="other">Other</label>
+                <input id="other" type="radio">
+            </div>
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="date-of-birth">Date of Birth: </label>
+            <input id="date-of-birth" name="date-of-birth" type="date">
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="email">E-mail: </label>
+            <input id="email" name="email" type="email" placeholder="email@xyz.com">
+
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="level">Level: </label>
+            <div>
+
+                <select name="level" id="level" style="margin-left: 3rem; background-color: rgb(238, 238, 238)">
+                    <option value="High School">High School</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="Graduation">Graduation</option>
+                    <option value="PHD">PHD</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 0.5rem;">
+            <label for="Department">Department: </label>
+            <div>
+
+                <select name="Department" id="Department" style="margin-left: 3rem; background-color: rgb(238, 238, 238)">
+                    <option value="Electrical Engineering">Electrical Engineering</option>
+                    <option value="Civil Engineering">Civil Engineering</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
+
+            </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 30% 70%; margin-bottom: 1.5rem;">
+            <label for="telephone">Tel/Mobile: </label>
+            <input id="telephone" name="telephone" type="text" placeholder="XXX XXX XXX">
+
+        </div>
+
+        <div style="text-align: right;">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
 </body>
+
 </html>
